@@ -1,0 +1,16 @@
+from django.contrib.auth.models import User
+from django.db import models
+
+# Create your models here.
+class Comentario(models.Model):
+    usuario = models.ForeignKey(User, on_delete=models.CASCADE)
+    comentario = models.TextField()
+    data = models.DateTimeField(auto_now_add=True)
+    aprovado = models.BooleanField(default=True)
+
+    def __str__(self):
+        #usado apenas para aparecer o nome no admin
+        return self.usuario.username
+        # return self.usuario.first_name
+
+
