@@ -49,6 +49,13 @@ Link API heroku (Consumir via postman): https://touristic-points-api.herokuapp.c
 	- install djangoREST: pip install djangorestframework
 	- put 'rest_framework' in INSTALLED_APP on settings.py file
 
+* Run clone project from git:
+	- Clone application;
+	- Install venv: `python -m venv venv`;
+	- Activate venv: `venv\Scripts\activate`;
+	- Install django and djangoREST: `pip install django & pip install djangorestframework & pip install django-filter`
+	- Install requirements.txt: `pip install -r requirements.txt`;
+
 ***
 ###3.Desenvolvendo uma API de pontos turísticos
 ***
@@ -65,13 +72,7 @@ Link API heroku (Consumir via postman): https://touristic-points-api.herokuapp.c
 		- viewsets.py
 		- serializers.py
 
-***
-###2.1 Configuração do Ambiente a partir de um clone do git
-***
-* Clone application;
-* Install venv: `python -m venv venv`;
-* Activate venv: `venv\Scripts\activate`;
-* Install requirements.txt: `pip install -r requirements.txt`;
+
 
 
 * API first steps:
